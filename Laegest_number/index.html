@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Largest Number</title>
+</head>
+<body>
+    <script>
+        let a = parseInt(prompt("Emter Your First Number:"));
+        let b = parseInt(prompt("Emter Your Secound Number:"));
+        let c = parseInt(prompt("Emter Your Third Number:"));
+
+        if(a >b && a>c){
+            largestNumber = a;
+        } else if( b>a && b>c ){
+            largestNumber= b;
+        } else{
+            largestNumber=c;
+        }
+
+        document.write("The largets Number Is: " + largestNumber);
+
+    </script>
+</body>
+</html>
