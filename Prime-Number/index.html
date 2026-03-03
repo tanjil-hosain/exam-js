@@ -4,13 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Find Prime number</title>
+    <style>
+        #find_prime{
+            background-color: rgb(191, 245, 245);
+            text-align: center;
+            height: 200px;
+            width: 500px;
+            justify-content: center;
+            
+        }
+    </style>
 </head>
 <body>
+    <h3 id="find_prime"></h3>
+
     <script>
-        let num = parseInt(prompt('Enter a Number:'));
+        let prime1= document.getElementById("find_prime");
+        let num = parseInt(prompt("'Enter a Number:'"));
         let count = 0 ;
         if(num <= 1 ){
-            document.write("It's Not a prime or composite");
+           prime1.innerHTML=(num+ " "+" not a prime or composite");
         } else{
             for(i = 2 ; i<num; i++){
                 if(num %i===0){
@@ -18,9 +31,9 @@
                     break;
                 }
             } if(count===0){
-                document.write("it's Prime Number");
+                 prime1.innerHTML=( num+ " "+"is a  Prime Number");
             } else{
-                document.write("it's Not Prime Number")
+                 prime1.innerHTML=( num+ " "+"isn't a  Prime Number");
             }
         }
     </script>
